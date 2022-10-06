@@ -31,4 +31,3 @@ public class Card {
         return "Card [userNumber=" + userNumber + ", cardNumber=" + cardNumber + "]";
     }
 }
-

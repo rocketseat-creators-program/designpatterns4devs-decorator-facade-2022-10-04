@@ -1,6 +1,5 @@
 package facade.supportSystem.facadeIsolated.service;
 
-
 import facade.supportSystem.facadeIsolated.model.Card;
 
 import java.util.HashMap;
@@ -29,5 +28,4 @@ public class CardService {
         System.out.println("Creating the new card: " + newCard);
         return newCard;
     }
-
 }

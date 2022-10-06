@@ -8,7 +8,6 @@ import java.util.List;
 
 public class SupportSystemFacade {
 
-
     CardService cardService;
     RegistrationService registrationService;
     ReportService reportService;

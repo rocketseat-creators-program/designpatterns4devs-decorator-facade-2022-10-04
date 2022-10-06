@@ -8,7 +8,7 @@ public class Client {
     public static void main(String[] args) {
         SupportSystemFacade facade = new SupportSystemFacade();
         SupportSystemNewCardFacade newFacade = new SupportSystemNewCardFacade();
-        Long userNumber = 898989L;
+        Long userNumber = 123456L;
 
         Long cardNumber = facade.getCardByUser(userNumber);
         System.out.println(cardNumber);

@@ -1,16 +1,14 @@
 package facade.supportSystem.facadeIsolated.service;
 
-
 import facade.supportSystem.facadeIsolated.model.Card;
 import facade.supportSystem.facadeIsolated.model.Registration;
 
 import java.util.*;
 
-public class RegistrationService {
-
+public class RegisterService {
     private Map<Long, List<Registration>> memory;
 
-    public RegistrationService() {
+    public RegisterService() {
         memory = new HashMap<Long, List<Registration>>();
         memory.put(11223344L, new ArrayList<>(Arrays.asList(
                 new Registration("McDonalds", 15d, new Date()),
@@ -34,8 +32,9 @@ public class RegistrationService {
         memory.remove(card.getCardNumber());
     }
 
-    public void addCardRegisters(Card card, List<Registration> registrationList) {
+    public void addCardRegisters(Card card, List<Registration> registers) {
         System.out.println("Associating pending Registers to new Card!");
-        memory.put(card.getCardNumber(), registrationList);
+        memory.put(card.getCardNumber(), registers);
     }
+
 }

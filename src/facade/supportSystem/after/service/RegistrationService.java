@@ -13,9 +13,9 @@ public class RegistrationService {
     public RegistrationService() {
         memory = new HashMap<Long, List<Registration>>();
         memory.put(11223344L, new ArrayList<>(Arrays.asList(
-                new Registration("McDonalds", 15d, new Date()),
-                new Registration("Pizza Hut", 25d, new Date()),
-                new Registration("Nike Store", 50d, new Date())
+                new Registration("Apple", 2000d, new Date()),
+                new Registration("Shein", 33d, new Date()),
+                new Registration("Mercado Livre shoes", 500d, new Date())
         )));
     }
 

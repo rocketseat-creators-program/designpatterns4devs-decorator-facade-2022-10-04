@@ -3,7 +3,6 @@ package facade.supportSystem.facadeIsolated.model;
 import java.util.Date;
 
 public class Registration {
-
     private String storeName;
     private Double value;
     private Date date;

@@ -3,6 +3,7 @@ package decorator.coffeeStore.model.decorators;
 import decorator.coffeeStore.model.Coffee;
 
 public class Milk extends CoffeeDecorator {
+
     public Milk(Coffee coffee) {
         super(coffee);
     }

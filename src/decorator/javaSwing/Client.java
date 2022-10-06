@@ -11,10 +11,10 @@ public class Client {
         frame.setLayout(new FlowLayout());
         frame.setSize(400,200);
 
-//		JTextArea textArea = new JTextArea(10, 30);
-//		frame.add(textArea);
+		JTextArea textArea = new JTextArea(10, 30);
+		frame.add(textArea);
 
-        JTextArea textArea = new JTextArea(10, 30);
+//        JTextArea textArea = new JTextArea(10, 30);
         JScrollPane scroll = new JScrollPane(textArea,
                 ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
                 ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);

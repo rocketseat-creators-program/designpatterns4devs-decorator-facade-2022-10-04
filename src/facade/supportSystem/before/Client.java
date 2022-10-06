@@ -8,6 +8,8 @@ import java.util.List;
 
 public class Client {
 
+    // alto acoplamento e baixo encapsulamento
+
     public static void main(String[] args) {
         CardService cardService = new CardService();
         RegistrationService registrationService = new RegistrationService();

@@ -3,21 +3,21 @@ package facade.supportSystem.facadeIsolated.facade;
 import facade.supportSystem.facadeIsolated.model.Card;
 import facade.supportSystem.facadeIsolated.service.CardService;
 import facade.supportSystem.facadeIsolated.service.PaymentService;
-import facade.supportSystem.facadeIsolated.service.RegistrationService;
+import facade.supportSystem.facadeIsolated.service.RegisterService;
 import facade.supportSystem.facadeIsolated.service.ReportService;
 
 public class SupportSystemFacade {
 
     CardService cardService;
-    RegistrationService registrationService;
+    RegisterService registerService;
     ReportService reportService;
     PaymentService paymentService;
 
     public SupportSystemFacade() {
         cardService = new CardService();
-        registrationService = new RegistrationService();
-        reportService = new ReportService(registrationService);
-        paymentService = new PaymentService(registrationService);
+        registerService = new RegisterService();
+        reportService = new ReportService(registerService);
+        paymentService = new PaymentService(registerService);
     }
 
     public Long getCardByUser(Long l) {
